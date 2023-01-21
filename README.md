@@ -20,3 +20,7 @@ musserda@CEDUC-PT4N2J09RL cloudnode %
 <https://stackoverflow.com/questions/55414302/an-ip-address-of-ec2-instance-gets-changed-after-the-restart#:~:text=Actually%2C%20When%20you%20stop%2Fstart,used%20by%20other%20EC2%20instances.>
 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#eip-pricing>
 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html>
+
+```
+scp -i "Dale Musser AWS1.pem" staticapp.zip ec2-user@techinnovator.online:
+```
