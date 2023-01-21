@@ -15,3 +15,4 @@ musserda@CEDUC-PT4N2J09RL cloudnode %
 
 ```
 <https://stackoverflow.com/questions/60372618/nodejs-listen-eacces-permission-denied-0-0-0-080>
+<https://expressjs.com/en/starter/static-files.html>
