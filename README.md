@@ -16,3 +16,7 @@ musserda@CEDUC-PT4N2J09RL cloudnode %
 ```
 <https://stackoverflow.com/questions/60372618/nodejs-listen-eacces-permission-denied-0-0-0-080>
 <https://expressjs.com/en/starter/static-files.html>
+
+<https://stackoverflow.com/questions/55414302/an-ip-address-of-ec2-instance-gets-changed-after-the-restart#:~:text=Actually%2C%20When%20you%20stop%2Fstart,used%20by%20other%20EC2%20instances.>
+<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#eip-pricing>
+<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html>
