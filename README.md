@@ -24,3 +24,6 @@ musserda@CEDUC-PT4N2J09RL cloudnode %
 ```
 scp -i "Dale Musser AWS1.pem" staticapp.zip ec2-user@techinnovator.online:
 ```
+```
+ssh -i "Dale Musser AWS1.pem" ec2-user@techinnovator.online
+```
