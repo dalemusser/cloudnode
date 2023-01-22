@@ -2,7 +2,7 @@
 
 This document describes how to launch (create a new) AWS EC2 instance.
 
-Primary source: [Tutorial: Get started with Amazon EC2 Linux instances]([Tutorial: Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance_linux)
+Primary source: [Tutorial: Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance_linux)
 
 Go to: [AWS EC2 console](https://console.aws.amazon.com/ec2/)
 
