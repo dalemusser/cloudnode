@@ -19,5 +19,8 @@ Primary source: [Set up to use Amazon EC2](https://docs.aws.amazon.com/AWSEC2/la
 * [AWS Security Group](aws_security_group.md)
 
 
+### Launching (Creating New) EC2 Instance
 
+Primary source: [Tutorial: Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance_linux)
 
+[Launch AWS EC2 Instance](launch_aws_ec2_instance.md)
