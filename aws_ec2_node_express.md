@@ -13,5 +13,7 @@ The following documents were the primary sources used to determine the process.
 
 A key pair and a security group must be created before launching an EC2 instance. The key pair is used for authentication when logging in via a terminal. The security group establishes the firewall rules that determine what traffic is allowed in/out (what ports are open/closed).
 
+Primary source: [Set up to use Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)
+
 
 
