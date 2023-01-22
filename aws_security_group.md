@@ -3,7 +3,7 @@
 This document describes creating an AWS security group that establishes the firewall rules for the traffic allowed in and out of the server (what ports
 are open or closed.)
 
-Primary source: [Create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-base-security-group)
+*Primary source:* [Create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-base-security-group)
 
 ## Creating
 
