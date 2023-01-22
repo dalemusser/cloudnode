@@ -30,3 +30,4 @@ ssh -i "Dale Musser AWS1.pem" ec2-user@techinnovator.online
 <https://pm2.keymetrics.io/docs/usage/process-management/>
 <https://expressjs.com/en/starter/static-files.html>
 <https://www.digitalocean.com/community/tutorials/nodejs-serving-static-files-in-express>
+<https://stackoverflow.com/questions/5924072/express-js-cant-get-my-static-files-why>
