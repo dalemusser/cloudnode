@@ -36,3 +36,5 @@ Enter/select the following:
 * Summary: set *Number of instances* to 1.
 
 Click the *Launch instance* button on the lower right of the page to create the new EC2 instance.
+
+Note: a more permanent IP address (one that won't change when the server stops/starts) will be assigned to the server after it is created.
