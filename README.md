@@ -36,3 +36,4 @@ ssh -i "Dale Musser AWS1.pem" ec2-user@techinnovator.online
 <https://dev.to/arifintahu/how-to-set-up-free-ssl-for-nodejs-app-in-aws-ec2-30fj>
 <https://stackoverflow.com/questions/36774492/running-a-simple-https-node-js-server-on-amazon-ec2>
 <https://stackoverflow.com/questions/47159315/enable-https-on-node-express-app-on-aws-ec2>
+<https://www.cronj.com/blog/https-node-js-aws-ec2-node-js/>
