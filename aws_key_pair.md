@@ -2,11 +2,11 @@
 
 This document describes creating and using an AWS key pair.
 
-Primary source: [Create a key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-key-pair)
+*Primary source:* [Create a key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-key-pair)
 
 ---
 
-Assumptions: you already have an AWS account and are logged in.
+*Assumptions:* you already have an AWS account and are logged in.
 
 ## Creating
 
