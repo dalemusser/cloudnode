@@ -7,6 +7,8 @@ Primary source: [Create a security group](https://docs.aws.amazon.com/AWSEC2/lat
 
 ## Creating
 
+Assumptions: you already have an AWS account and are logged in.
+
 Go to: [AWS EC2 console](https://console.aws.amazon.com/ec2/)
 
 *Important:* First, make sure the **Region** in the top navigation bar is set to the region you want to use and is used to create the key pair,
