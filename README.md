@@ -31,3 +31,8 @@ ssh -i "Dale Musser AWS1.pem" ec2-user@techinnovator.online
 <https://expressjs.com/en/starter/static-files.html>
 <https://www.digitalocean.com/community/tutorials/nodejs-serving-static-files-in-express>
 <https://stackoverflow.com/questions/5924072/express-js-cant-get-my-static-files-why>
+
+<https://technoapple.com/blog/post/How-to-Setup-a-HTTPS-Node-JS-Server-on-Amazon-EC2>
+<https://dev.to/arifintahu/how-to-set-up-free-ssl-for-nodejs-app-in-aws-ec2-30fj>
+<https://stackoverflow.com/questions/36774492/running-a-simple-https-node-js-server-on-amazon-ec2>
+<https://stackoverflow.com/questions/47159315/enable-https-on-node-express-app-on-aws-ec2>
