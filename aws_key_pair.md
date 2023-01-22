@@ -59,7 +59,7 @@ To copy files from your local computer to the server in a Terminal using scp:
 
 Example:
 
-```scp -i "~/keys/AWS Node Server 1.pem" staticapp.zip ec2-user@techinnovator.online:```
+```scp -i "~/keys/AWS Node Server 1.pem" staticapp.zip ec2-user@techinnovator.online:``` copies staticapp.zip from the current local directory to the home directory on the server.
 
 scp documentation:
 
