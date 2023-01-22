@@ -40,3 +40,4 @@ For better security the Source can be set to the specific public IPv4 address of
 This only works if your workstation has a public IP address or you know the public IP address of the LAN's gateway. Setting a specific IP address
 makes it difficult to use a computer from different locations...like a laptop that is used in multiple locations and has different IP addresses in each.
 
+You will select the security group you have created when you launch a new EC2 instance.
