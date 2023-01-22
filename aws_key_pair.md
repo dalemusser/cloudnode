@@ -63,7 +63,7 @@ Example:
 
 scp documentation:
 
-* in the Terminal: man scp
+* in the Terminal: man scp (on web at: [scp(1) - Linux man page](https://linux.die.net/man/1/scp)
 * [scp Linux command](https://www.garron.me/en/articles/scp.html) (garron.me)
 * [How to Use SCP Command to Securely Transfer Files](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/) (linuxize.com)
 
