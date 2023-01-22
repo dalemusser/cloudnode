@@ -13,7 +13,7 @@ Go to: [AWS EC2 console](https://console.aws.amazon.com/ec2/)
 *Important:* First, make sure the **Region** in the top navigation bar is set to the region you want to use and is used to create the key pair,
 the security group, and the EC2 instance.
 
-In the top center area of the page is Resources. Click on *Key pairs* under resources.
+In the top center area of the page is Resources. Click on *Key pairs* under Resources.
 
 On the Key pairs page click on the *Create key pair* button (top left).
 
