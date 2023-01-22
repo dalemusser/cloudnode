@@ -6,7 +6,7 @@ Primary source: [Create a key pair](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
 Assumptions: you already have an AWS account and are logged in.
 
-#### Creating
+## Creating
 
 Go to: [AWS EC2 console](https://console.aws.amazon.com/ec2/)
 
@@ -33,7 +33,7 @@ In Terminal, use ```chmod 400 "AWS Node Server 1.pem"``` to set the rights.  You
 
 Store the .pem file in a safe place only you can access. The section on Using the key pair addresses where to put the .pem file to use it.
 
-#### Using
+## Using
 
 The private key (.pem file) that was created when the key pair was created is used to login to the server (ssh) or copy files to it (scp). 
 The public key of the key pair is used when the server is created to establish the credentials for accessing the server.
