@@ -35,7 +35,7 @@ Under *Inbound rules* add the following rules:
 
 Click the *Create security group* button at the bottom right to create the security group.
 
-Note: setting the Source for SSH to Anywhere-IPv4 means the client computer can have any IPv4 address and access the server usign ssh.
+Note: setting the Source for SSH to Anywhere-IPv4 means the client computer can have any IPv4 address and access the server using ssh.
 For better security the Source can be set to the specific public IPv4 address of the client computer (your development workstation).
 This only works if your workstation has a public IP address or you know the public IP address of the LAN's gateway. Setting a specific IP address
 makes it difficult to use a computer from different locations...like a laptop that is used in multiple locations and has different IP addresses in each.
