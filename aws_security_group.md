@@ -26,8 +26,17 @@ Note: it is recommended to put the region used in the security group name. "usea
 
 Under *Inbound rules* add the following rules:
 
-* Click *Add rule* button to create rule to allow port 80 (http) from anywhere using IPv4
-  * Type: Custom TCP, Protocol: TCP, Port range: 80, Source: Anywhere-IPv4
-  * The above is saying open port 80 for http traffic via IPv4 from anywhere.
+* Click *Add rule* button to create rule to allow incoming traffic on port 80 (http) from anywhere using IPv4.
+  * Type: HTTP, Protocol: TCP, Port range: 80, Source: Anywhere-IPv4
+* Click *Add rule* button to create rule to allow incoming traffic on port 443 (https) from anywhere using IPv4.
+  * Type: HTTPS, Protocol: TCP, Port range: 443, Source: Anywhere-IPv4
+* Click *Add rule* button to create rule to allow incoming traffic on port 22 (ssh/scp) from anywhere using IPv4. (See note below!)
+  * Type: SSH, Protocol: TCP, Port range: 22, Source: Anywhere-IPv4
 
+Click the *Create security group* button at the bottom right to create the security group.
+
+Note: setting the Source for SSH to Anywhere-IPv4 means the client computer can have any IPv4 address and access the server usign ssh.
+For better security the Source can be set to the specific public IPv4 address of the client computer (your development workstation).
+This only works if your workstation has a public IP address or you know the public IP address of the LAN's gateway. Setting a specific IP address
+makes it difficult to use a computer from different locations...like a laptop that is used in multiple locations and has different IP addresses in each.
 
