@@ -15,7 +15,7 @@ A key pair and a security group must be created before launching an EC2 instance
 
 Primary source: [Set up to use Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html) (AWS)
 
-
+* [AWS Key Pair](aws_key_pair.md)
 
 
 
