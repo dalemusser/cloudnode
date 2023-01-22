@@ -7,7 +7,7 @@ Primary source: [Create a security group](https://docs.aws.amazon.com/AWSEC2/lat
 
 ## Creating
 
-Assumptions: you already have an AWS account and are logged in.
+*Assumptions:* you already have an AWS account and are logged in.
 
 Go to: [AWS EC2 console](https://console.aws.amazon.com/ec2/)
 
