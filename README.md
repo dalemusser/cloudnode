@@ -27,3 +27,4 @@ scp -i "Dale Musser AWS1.pem" staticapp.zip ec2-user@techinnovator.online:
 ```
 ssh -i "Dale Musser AWS1.pem" ec2-user@techinnovator.online
 ```
+<https://pm2.keymetrics.io/docs/usage/process-management/>
