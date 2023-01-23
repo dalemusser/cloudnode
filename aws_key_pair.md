@@ -56,7 +56,7 @@ ssh into the server:
 
 Notice that the user is "ec2-user". This is the default user name used when an account is created for a new EC2 instance.
 
-<ip-address> is where either the IPV4 numerical address or the domain name goes.
+```<ip-address>``` is where either the IPV4 numerical address or the domain name goes.
 
 To copy files from your local computer to the server in a Terminal using scp:
 
