@@ -37,6 +37,8 @@ To create the "A Record" to associate the domain name with the IP address do the
   * set TTL to Automatic
 * click the green checkbox at the right end of the record to create it
 
+Note: if your base domain name is already in use (dalemusser.com for example), you can use a subdomain instead (nodeapp.dalemusser.com).
+
 Once you have the DNS record set up and the information has propogated, you can either use the domain name or the IP address when you ssh or use a web 
 browser to connect to the server.
 
