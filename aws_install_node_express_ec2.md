@@ -61,9 +61,9 @@ If I want to copy the files and directories from my current working directory (s
 scp -r -i "~/keys/Dale Musser AWS1.pem" * ec2-user@techinnovator.online:
 ```
 
-* -r = recursively go through and copy the directories
-* \* copy all from the source directory
-* : after IP address with nothing following means the home directory on the server
+* ```-r``` means recursively go through and copy the directories
+* ```*``` means copy all from the source directory
+* ```:``` after IP address with nothing following means the home directory on the server
 
 Copying all the files individually takes more time than zipping up the files, copying the zip file, and unzipping it on the server. The following
 copies a zip file named staticapp.zip to the home directory on the server.
