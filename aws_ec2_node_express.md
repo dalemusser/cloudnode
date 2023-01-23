@@ -25,6 +25,14 @@ Primary source: [Tutorial: Get started with Amazon EC2 Linux instances](https://
 
 * [Launch AWS EC2 Instance](launch_aws_ec2_instance.md)
 
-## Allocating Elastic IP Address
+## Allocating and Assigning Elastic IP Address
 
-* [Allocate Elastic IP Address](aws_elastic_ip_address.md)
+* [Allocate and Assign Elastic IP Address](aws_elastic_ip_address.md)
+
+## Setting DNS Record to Assign IP to Domain Name
+
+* [Create DNS Record](create_dns_record.md)
+
+
+
+
