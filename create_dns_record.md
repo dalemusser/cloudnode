@@ -71,5 +71,7 @@ dalemusser.com.		1034	IN	A	165.22.162.195
 
 ```
 
+<https://dalemusser.com>
+<https://165.22.162.195>
 
 
