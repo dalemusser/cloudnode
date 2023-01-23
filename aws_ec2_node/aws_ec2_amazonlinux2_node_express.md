@@ -10,7 +10,7 @@ This document describes the installation of node and express on Amazon Linux on 
 
 *Important:* Amazon Linux 2 does not currently support the current LTS release (version 18.x) of Node.js. Node.js version 16.x must be used.
 From [NodeSource Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md#rpm):
-![]()
+![node on Amazon Linux](node_on_amazon_linux.png)
 
 
 Install the node version manager (nvm):
