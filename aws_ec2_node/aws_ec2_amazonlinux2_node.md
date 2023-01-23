@@ -26,7 +26,7 @@ If it does, run:
 From [NodeSource Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md#rpm):
 ![node on Amazon Linux](node_on_amazon_linux.png)
 
-The following covers installation of Node.hs 16.x.
+The following covers installation of Node.js 16.x.
 
 Install the node version manager (nvm):
 
