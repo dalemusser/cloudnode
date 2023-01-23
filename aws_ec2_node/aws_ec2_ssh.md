@@ -1,4 +1,4 @@
-# Logging Into AWS EC2 Instance
+# Logging Into AWS EC2 Instance (ssh)
 
 This document describes how to use to login to an AWS EC2 instance.
 
