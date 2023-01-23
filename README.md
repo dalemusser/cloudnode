@@ -4,7 +4,7 @@ This document describes setting up cloud services and running applications on th
 
 #### Configurations
 
-* [AWS EC2 Node/Express](./aws_ec2_node_express.md)
+* [AWS EC2 Node/Express](./aws_ec2_node/aws_ec2_node_express.md)
 
 
 
