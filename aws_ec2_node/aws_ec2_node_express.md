@@ -44,6 +44,10 @@ The ability to do these two things is needed for the steps that follow.
 
 ---
 
+## Installing Node on Amazon Linux 2 on AWS EC2 Instance
+
+* [Installing Node on Amazon Linux 2 on AWS EC2 Instance](aws_ec2_amazonlinux2_node.md)
+
 ## Installing Node/Express App on EC2 Instance
 
 * [Install Node/Express App on EC2 Instance](aws_install_node_express_ec2.md)
