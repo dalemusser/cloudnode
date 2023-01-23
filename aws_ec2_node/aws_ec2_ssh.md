@@ -1,10 +1,20 @@
 # Logging Into AWS EC2 Instance (ssh)
 
-This document describes how to use to login to an AWS EC2 instance.
+This document describes how to use ```ssh``` to login to an AWS EC2 instance.
 
 ## Login to AWS EC2 Instance
 
-Login to the server using Terminal and ssh.
+To login to an EC2 instance from ```ssh``` is used.  ```ssh``` = secure shell. It uses ssl to allow secure communication between the workstation 
+(local computer) and the EC2 instance (server).
+
+When using *ssh*, like when using *scp*, a ```.pem``` file (private key) is needed to authenticate with the server. Make sure the rights on 
+the ```.pem``` file  are set to 400 and it is put in a location where it can be easily accessed, but is also safe. In Terminal, use
+```chmod 400 <path_to_pem_file>``` to set the rights.
+
+Since your home directory is at ```~```, creating a ```keys``` directory in your home directory and putting the ```.pem``` file there, allows you
+to use the following path to access it: ```"~/keys/<filename>.pem"```. Example: ```"~/keys/AWS Node Server 1.pem"```
+
+Login to the server using Terminal and ```ssh```.
 
 ```ssh -i <pem-file-path> ec2-user@<ip-address>```
 
