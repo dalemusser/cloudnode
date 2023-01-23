@@ -33,4 +33,9 @@ Select the following on the *Associate Elastic IP address* page:
 * Private IP address: click in the *Choose a private IP address* selector and choose the IP address that appears.
 * Reassociation: leave *Allow this Elastic IP address to be reassociated* unchecked.
 
+Click the *Associate* button in the lower right of the page to associate the IP address with the instance.
 
+The IP address that is assigned will be needed to login to the server and to set a record to associate it with a domain name. So, remember what IP address is assigned.
+
+Note: I didn't have to shutdown the instance to associate the IP address. It appeared to do it while it was running.
+If there are any issues, I would stop the server and then associate the IP.  
