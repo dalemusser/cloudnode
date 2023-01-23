@@ -8,6 +8,20 @@ This document describes the installation of node and express on Amazon Linux on 
 
 *Assumptions:* you are logged into the instance using ssh in Terminal.
 
+Before installing sofware, update the system if it is not up-to-date.  When you login, a message like the following may appear:
+
+```
+7 package(s) needed for security, out of 8 available
+Run "sudo yum update" to apply all updates.
+```
+
+If it does, run:
+
+```
+"sudo yum update
+```
+
+
 *Important:* Amazon Linux 2 does not currently support the current LTS release (version 18.x) of Node.js. Use version 16.x instead.
 From [NodeSource Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md#rpm):
 ![node on Amazon Linux](node_on_amazon_linux.png)
