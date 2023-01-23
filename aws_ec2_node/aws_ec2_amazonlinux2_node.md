@@ -1,4 +1,4 @@
-# Installing Node and Express on Amazon Linux on AWS EC2 Instance
+# Installing Node on Amazon Linux 2 on AWS EC2 Instance
 
 This document describes the installation of node and express on Amazon Linux on an AWS EC2 instance.
 
