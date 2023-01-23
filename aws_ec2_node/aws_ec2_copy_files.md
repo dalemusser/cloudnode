@@ -1,4 +1,4 @@
-# Copying Files from Workstation to EC2 Instance
+# Copying Files from Workstation to EC2 Instance (scp)
 
 This document describes how to copy files from a development workstation (the local computer) to an EC2 instance (the server).
 
