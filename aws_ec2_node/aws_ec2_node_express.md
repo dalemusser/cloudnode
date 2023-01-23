@@ -33,17 +33,25 @@ Primary source: [Tutorial: Get started with Amazon EC2 Linux instances](https://
 
 * [Create DNS Record](create_dns_record.md)
 
+---
+
+The following cover how to login to the EC2 instance (server) using ssh and how to copy files from the local workstation to the server.
+The ability to do these two things is needed for the steps that follow.
+
 ## Logging In to the EC2 Instance
 
 * [Logging Into AWS EC2 Instance (ssh)](aws_ec2_ssh.md)
+
+## Copying Files from the Local Computer (Workstation) to the Server (EC2 Instance)
+
+* [Copy Files from Workstation to EC2 Instance](aws_ec2_copy_files.md)
+
+---
 
 ## Installing Node/Express App on EC2 Instance
 
 * [Install Node/Express App on EC2 Instance](aws_install_node_express_ec2.md)
 
-## Copying Files from the Local Computer (Workstation) to the Server (EC2 Instance)
-
-* [Copy Files from Workstation to EC2 Instance](aws_ec2_copy_files.md)
 
 
 
