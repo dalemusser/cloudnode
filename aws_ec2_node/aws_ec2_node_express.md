@@ -40,7 +40,7 @@ The following cover how to login to the EC2 instance (server) using ssh and how 
 The ability to do these two things is needed for the steps that follow.
 
 * [Logging Into AWS EC2 Instance (ssh)](aws_ec2_ssh.md)
-* [Copying Files from Workstation to EC2 Instance](aws_ec2_copy_files.md)
+* [Copying Files from Workstation to EC2 Instance (scp)](aws_ec2_copy_files.md)
 
 ---
 
