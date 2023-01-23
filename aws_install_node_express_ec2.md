@@ -1,6 +1,8 @@
-## Install Node/Express App on EC2 Instance
+# Install Node/Express App on EC2 Instance
 
 This document describes installing a node/express app on an AWS EC2 instance.
+
+## Login to AWS EC2 Instance
 
 Login to the server using Terminal and ssh.
 
@@ -45,4 +47,46 @@ Host key verification failed.
 To be able to log in after this happens you will need to delete the old record from ```~/.ssh/known_hosts```.  You can do that by either
 editing the file using something like *nano* and find the line and delete it OR you can just delete the whole ```known_hosts``` file. If you 
 delete the file it will just ask again if you want to connect like you did the first time for any server that was in the list.
+
+## Copy Node/Express App to EC2 Instance
+
+To copy the node/express app to the server you can use ```scp``` at the command line. scp = secure copy. It uses ssl to securely copy files from one 
+computer to another on the network.
+
+If I want to copy the files and directories from my current working directory (say, the project's directory) to the home folder on the server, use:
+
+```
+scp -r -i "~/keys/Dale Musser AWS1.pem" * ec2-user@techinnovator.online:
+```
+
+-r = recursively go through and copy the directories
+* = copy all from the source directory
+* : after IP address with nothing following means the home directory on the server
+
+Copying all the files individually takes more time than zipping up the files, copying the zip file, and unzipping it on the server. The following
+copies a zip file named staticapp.zip to the home directory on the server.
+
+```
+scp -i "~/keys/AWS Node Server 1.pem" staticapp.zip ec2-user@techinnovator.online:
+```
+
+See the [AWS Key Pair](aws_key_pair.md) page for more information on using ```scp```.
+
+The goal is to get the files for the node/express app project on the server.  The files can be placed in the home directory or for supporting
+experimenting with multiple app versions, you can put the files in a folder in the home directory.
+
+
+NOTE: this is where I am currently in creating this document.
+
+Remaining:
+
+Installing node and express
+
+Installing and using pm2
+
+Connecting to the app
+
+Creating an app that support https
+
+
 
