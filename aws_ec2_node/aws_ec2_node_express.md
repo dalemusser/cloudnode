@@ -33,6 +33,10 @@ Primary source: [Tutorial: Get started with Amazon EC2 Linux instances](https://
 
 * [Create DNS Record](create_dns_record.md)
 
+## Logging In to the EC2 Instance
+
+* [Logging Into AWS EC2 Instance (ssh)](aws_ec2_ssh.md)
+
 ## Installing Node/Express App on EC2 Instance
 
 * [Install Node/Express App on EC2 Instance](aws_install_node_express_ec2.md)
