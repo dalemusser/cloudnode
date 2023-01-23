@@ -21,29 +21,83 @@ On the server, unzip *myapp.zip* in the home directory:
 
 ```unzip myapp.zip```
 
-There should now be a *myapp* directory in the home directory containing the node/express app.
+There should now be a *myapp* directory in the home directory containing the node/express app. In that directory is the 
+```.js``` file for starting the node app. Typically it is something like ```index.js``` or ```app.js```.  For this documentation, 
+```index.js``` is used.
 
+You *could* now go into the *myapp* directory and run the node app by executing ```node index.js```. Before running the app,
+there is an issue with it being able to bind to (use) port 80 and port 443. Port number below 1024 are
+special in that normal users are not allowed to run servers on them. The app needs to be run as admin using ```sudo``` to
+bind to ports 80 and/or 443. BUT!!!!!!, apps should not be run with sudo; they should not be given admin rights. There are
+real security problems with running an app as admin. The following is what is displayed when running a node app trying to 
+bind to port 80.
 
+```
+[ec2-user@ip-172-31-88-127 staticapp]$ node index.js
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
 
+Error: listen EACCES: permission denied 0.0.0.0:80
+    at Server.setupListenHandle [as _listen2] (node:net:1446:21)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/home/ec2-user/staticapp/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ec2-user/staticapp/index.js:11:5)
+    at Module._compile (node:internal/modules/cjs/loader:1165:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1219:10)
+    at Module.load (node:internal/modules/cjs/loader:1043:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1490:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EACCES',
+  errno: -13,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 80
+}
+```
 
+The next steps makes it possible for the node app to bind to ports less than 1024.
 
+First, determine where node is installed. ```which node``` can be used to determine this.
 
+```which node```
 
+The following is an example of a path that may be returned. Copy the path **you receive** for your node installation.
 
+```~/.nvm/versions/node/v16.19.0/bin/node```
 
-NOTE: this is where I am currently in creating this document.
+Next, execute the following command to give the ```node``` app permission to use ports less than 1024 (port 80 in our case):
 
-Remaining:
+```sudo setcap cap_net_bind_service=+ep <path-to-node>```
 
-* Configuration to support access to port 80 and 443
+Example using the demonstration path from ```which node```:
 
-* Installing node and express
+```sudo setcap cap_net_bind_service=+ep ~/.nvm/versions/node/v16.19.0/bin/node```
 
-* Installing and using pm2
+Note: If ```node``` is replaced or updated, the above command must be executed on the new copy of ```node``` to re-establish the permission to be allowed to access ports less than 1024.
 
-* Connecting to the app
+Now, the node/express app can be run and tested using:
 
-* Creating an app that support https
+```node index.js```
+
+If there are no issues, a message like the following is displayed.
+
+```
+[ec2-user@ip-172-31-88-127 staticapp]$ node index.js
+Example app listening on port 80
+```
+...and the cursor is hanging out on the next line. If we close the Terminal or ctrl-c out of the app, the app will stop. 
+So, this way of running the app only works for testing. In the next steps ```pm2``` (process manager 2) is used to run the app
+so it will keep running when the Terminal is closed.
+
+With the app running, put the url for the app, http://<domain-name>, in the browser and see if the app responds. For example,
+with my app at *techinnovator.online* I go to http://techinnovator.online and get "Hello World!" in the browser.
+
+ 
 
 
 
