@@ -76,7 +76,7 @@ Note: crtrl-k cuts a line and ctrl-x exits and asks to save.
 
 ## Right After Login
 
-When you login you may get a message like the following:
+When you login, you may get a message like the following:
 
 ```
 7 package(s) needed for security, out of 8 available
