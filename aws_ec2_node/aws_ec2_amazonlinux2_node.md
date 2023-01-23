@@ -40,7 +40,11 @@ Use nvm to install Node.js 16.x:
 
 ```nvm install 16```
 
-Test that Node.js is installed:
+To run ```nvm``` and get its version number:
+
+```nvm -v```
+
+Test that node can evaluate a line of JavaScript:
 
 ```node -e "console.log('Running Node.js ' + process.version)"```
 
