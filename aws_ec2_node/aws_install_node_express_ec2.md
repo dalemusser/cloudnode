@@ -21,6 +21,8 @@ On the server, unzip *myapp.zip* in the home directory:
 
 ```unzip myapp.zip```
 
+There should now be a *myapp* directory in the home directory containing the node/express app.
+
 
 
 
