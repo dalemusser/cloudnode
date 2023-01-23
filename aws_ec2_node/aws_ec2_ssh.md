@@ -74,4 +74,17 @@ nano ~/.ssh/known_hosts
 
 Note: crtrl-k cuts a line and ctrl-x exits and asks to save.
 
+## Right After Login
 
+When you login you may get a message like the following:
+
+```
+7 package(s) needed for security, out of 8 available
+Run "sudo yum update" to apply all updates.
+```
+
+If you do, run the following command to update the system:
+
+```
+sudo yum update
+```
