@@ -80,13 +80,15 @@ NOTE: this is where I am currently in creating this document.
 
 Remaining:
 
-Installing node and express
+* Configuration to support access to port 80 and 443
 
-Installing and using pm2
+* Installing node and express
 
-Connecting to the app
+* Installing and using pm2
 
-Creating an app that support https
+* Connecting to the app
+
+* Creating an app that support https
 
 
 
