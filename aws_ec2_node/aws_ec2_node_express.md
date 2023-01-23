@@ -41,5 +41,11 @@ Primary source: [Tutorial: Get started with Amazon EC2 Linux instances](https://
 
 * [Install Node/Express App on EC2 Instance](aws_install_node_express_ec2.md)
 
+## Copying Files from the Local Computer (Workstation) to the Server (EC2 Instance)
+
+* [Copy Files from Workstation to EC2 Instance](aws_ec2_copy_files.md)
+
+
+
 
 
