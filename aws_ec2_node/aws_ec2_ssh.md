@@ -6,7 +6,7 @@ This document describes how to use to login to an AWS EC2 instance.
 
 Login to the server using Terminal and ssh.
 
-```ssh -i "~/keys/AWS Node Server 1.pem" ec2-user@<ip-address>```
+```ssh -i <pem-file-path> ec2-user@<ip-address>```
 
 Examples:
 
@@ -49,4 +49,19 @@ Host key verification failed.
 To be able to log in after this happens you will need to delete the old record from ```~/.ssh/known_hosts```.  You can do that by either
 editing the file using something like *nano* and find the line and delete it OR you can just delete the whole ```known_hosts``` file. If you 
 delete the file it will just ask again if you want to connect like you did the first time for any server that was in the list.
+
+To delete the *known_hosts* file use:
+
+```
+rm ~/.ssh/known_hosts
+```
+
+To edit the *known_hosts* file use:
+
+```
+nano ~/.ssh/known_hosts
+```
+
+Note: crtrl-k cuts a line and ctrl-x exits and asks to save.
+
 
