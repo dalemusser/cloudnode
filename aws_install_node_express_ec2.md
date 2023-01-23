@@ -6,26 +6,28 @@ This document describes installing a node/express app on an AWS EC2 instance.
 
 Login to the server using Terminal and ssh.
 
-```ssh -i "~keys/AWS Node Server 1.pem" ec2-user@<ip-address>```
+```ssh -i "~/keys/AWS Node Server 1.pem" ec2-user@<ip-address>```
 
 Examples:
 
-```ssh -i "~keys/AWS Node Server 1.pem" ec2-user@techinnovator.online```<br/>
-```ssh -i "~keys/AWS Node Server 1.pem" ec2-user@3.222.14.12```
+```ssh -i "~/keys/AWS Node Server 1.pem" ec2-user@techinnovator.online```<br/>
+```ssh -i "~/keys/AWS Node Server 1.pem" ec2-user@3.222.14.12```
 
 When you connect the first time it will ask if you want to continue connecting. You should answer: yes. This will add the host (server)
 to the known hosts located in ```~/.ssh/known_hosts```. ```~``` is your home directory on your local workstastion.
 
-If you've connected before and the server is different than previously accessed (like if you kill your old instance and create a new one), 
-you will get the following message.
-
 ```
+ssh -i "~/keys/AWS Node Server 1.pem" ec2-user@techinnovator.online 
+
+The authenticity of host 'techinnovator.online (3.222.14.12)' can't be established.
+ED25519 key fingerprint is SHA256:8dkmBLBF3fm1gfJBzCiMaXw8SviSgBMo/TSu1/pmDqs.
+This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'techinnovator.online' (ED25519) to the list of known hosts.
-
-When you do
-a host key is saved in ~/.ssh/known_hosts
 ```
+
+If you've connected before and the server is different than previously accessed (like if you kill your old instance and create a new one), 
+you will get the following message.
 
 ```
 ssh -i "~/keys/Dale Musser AWS1.pem" ec2-user@techinnovator.online 
@@ -59,7 +61,7 @@ If I want to copy the files and directories from my current working directory (s
 scp -r -i "~/keys/Dale Musser AWS1.pem" * ec2-user@techinnovator.online:
 ```
 
--r = recursively go through and copy the directories
+* -r = recursively go through and copy the directories
 * = copy all from the source directory
 * : after IP address with nothing following means the home directory on the server
 
