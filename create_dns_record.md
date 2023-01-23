@@ -44,34 +44,31 @@ After creating it, the record is available to the domain name server. It may, th
 If you change DNS records, the changes may take time to propogate and the browser may cache a previous lookup. So, if a domain name is not being
 directed to the IP address correctly it may take more time or you may way to clear the browser and restart it.
 
-You can use the ```dig <domain-name>``` at the command line to see what DNS records are associated with a domain. In the following, *dalemusser.com*
-has an "A Record" associating it with the IP address of 165.22.162.195.
+You can use the ```dig <domain-name>``` at the command line to see what DNS records are associated with a domain. In the following, *techinnovator.online* has an "A Record" associating it with the IP address of 3.222.14.12.
 
 ```
-musserda@CEDUC-PT4N2J09RL ~ % dig dalemusser.com
+musserda@CEDUC-PT4N2J09RL ~ % dig techinnovator.online
 
-; <<>> DiG 9.10.6 <<>> dalemusser.com
+; <<>> DiG 9.10.6 <<>> techinnovator.online
 ;; global options: +cmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48238
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22902
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
 
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags:; udp: 512
 ;; QUESTION SECTION:
-;dalemusser.com.			IN	A
+;techinnovator.online.		IN	A
 
 ;; ANSWER SECTION:
-dalemusser.com.		1034	IN	A	165.22.162.195
+techinnovator.online.	1799	IN	A	3.222.14.12
 
-;; Query time: 89 msec
+;; Query time: 64 msec
 ;; SERVER: 75.75.75.75#53(75.75.75.75)
-;; WHEN: Sun Jan 22 16:38:40 PST 2023
-;; MSG SIZE  rcvd: 59
+;; WHEN: Sun Jan 22 16:38:21 PST 2023
+;; MSG SIZE  rcvd: 65
 
 ```
 
-<https://dalemusser.com>
-<https://165.22.162.195>
 
 
