@@ -2,6 +2,11 @@
 
 This document describes installing a node/express app on an AWS EC2 instance and configuring it to run.
 
+*Primary references:* 
+* [Priviliged ports](https://www.w3.org/Daemon/User/Installation/PrivilegedPorts.html)
+* [Allowing node.js applications to run on port 80](https://serverfault.com/questions/665709/allowing-node-js-applications-to-run-on-port-80)
+* [How to Deploy a Node.js application in AWS EC2](https://plainenglish.io/blog/deploying-a-nodejs-application-in-aws-ec2)
+
 ## Copy Node/Express App to EC2 Instance
 
 To copy the node/express app (project directory) to the server you can use ```scp``` at the command line. ```scp``` is used to securely copy files from your local workstation to the EC2 instance (server). See: [Copying Files from Workstation to EC2 Instance (scp)](aws_ec2_copy_files.md)
@@ -138,6 +143,39 @@ After pm2 starts the node/express app the command prompt returns. The Terminal m
 
 Test that the node/express server is running and works by going to its URL. Remember to put ```http://``` before the domain name if the app is running on port 80.
  
+## pm2 Commands
 
+The following ```pm2``` commands are useful.
 
+### Getting List of Processes
 
+```pm2 list``` lists the processes that pm2 is managing.
+
+Example:
+
+```[ec2-user@ip-172-31-88-127 ~]$ pm2 list
+┌─────┬──────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id  │ name     │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├─────┼──────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0   │ index    │ default     │ 1.0.0   │ fork    │ 7483     │ 16m    │ 15   │ online    │ 0%       │ 50.3mb   │ ec2-user │ disabled │
+└─────┴──────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+[ec2-user@ip-172-31-88-127 ~]$ 
+```
+
+```pm2 stop <name>``` stops the process that is named <name>. When an app needs to be updated, stop the current app, install the new app, and start the new app using ```pm2 start index.js```.
+      
+Example:
+      
+```
+[ec2-user@ip-172-31-88-127 ~]$ pm2 stop index
+[PM2] Applying action stopProcessId on app [index](ids: [ 0 ])
+[PM2] [index](0) ✓
+┌─────┬──────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id  │ name     │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├─────┼──────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0   │ index    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 15   │ stopped   │ 0%       │ 0b       │ ec2-user │ disabled │
+└─────┴──────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+[ec2-user@ip-172-31-88-127 ~]$   
+```
+
+Documentation for ```pm2```: [PM2 Process Management Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/)
