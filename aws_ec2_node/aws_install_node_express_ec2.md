@@ -33,7 +33,7 @@ There should now be a *myapp* directory in the home directory containing the nod
 You *could* now go into the *myapp* directory and run the node app by executing ```node index.js```. Before running the app,
 there is an issue with it being able to bind to (use) port 80 or port 443. Port number below 1024 are
 special in that normal users are not allowed to run servers on them. The app needs to be run as admin using ```sudo``` to
-bind to ports 80 and/or 443. BUT!!!!!!, apps should not be run with ```sudo```; they should not be given admin rights. There are
+bind to ports 80 and/or 443. BUT!!!!!!, apps should not be run with ```sudo```; They should not be given admin rights. There are
 real security problems with running an app as admin. The following is what is displayed when running a node app trying to 
 bind to port 80.
 
