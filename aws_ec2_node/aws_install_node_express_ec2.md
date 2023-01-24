@@ -113,7 +113,7 @@ Next, install ```pm2``` (process manager 2) to run the app and keep it running w
 ```npm install pm2 -g```
 
 Note: the ```-g``` is needed. It is to specify install globally. But, since ```npm``` is installed in ```.nvm``` in the
-home directory (```~```), ```pm2``` is installed there as well. I found that if ```-g``` isn't included ```which pm2```` can't find it.
+home directory (```~```), ```pm2``` is installed there as well. I found that if ```-g``` isn't included ```which pm2``` can't find it.
 
 When ```-g``` is used, the path looks like the following after the installation:
 
