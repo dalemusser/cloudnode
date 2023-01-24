@@ -178,4 +178,4 @@ Example:
 [ec2-user@ip-172-31-88-127 ~]$   
 ```
 
-Documentation for ```pm2```: [PM2 Process Management Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/)
+See the documentation for ```pm2``` at [PM2 Process Management Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/) for additional information.
