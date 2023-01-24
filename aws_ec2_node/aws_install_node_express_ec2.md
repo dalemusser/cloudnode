@@ -28,7 +28,7 @@ There should now be a *myapp* directory in the home directory containing the nod
 You *could* now go into the *myapp* directory and run the node app by executing ```node index.js```. Before running the app,
 there is an issue with it being able to bind to (use) port 80 and port 443. Port number below 1024 are
 special in that normal users are not allowed to run servers on them. The app needs to be run as admin using ```sudo``` to
-bind to ports 80 and/or 443. BUT!!!!!!, apps should not be run with sudo; they should not be given admin rights. There are
+bind to ports 80 and/or 443. BUT!!!!!!, apps should not be run with ```sudo```; they should not be given admin rights. There are
 real security problems with running an app as admin. The following is what is displayed when running a node app trying to 
 bind to port 80.
 
@@ -60,7 +60,8 @@ Emitted 'error' event on Server instance at:
 }
 ```
 
-The next steps makes it possible for the node app to bind to ports less than 1024.
+The next steps makes it possible for the node app to bind to ports less than 1024. If your app isn't running on a port
+less than 1024 (port 80 or 443 for example), then the ```setcap``` command that follows doesn't need to be run.
 
 First, determine where node is installed. ```which node``` can be used to determine this.
 
@@ -94,8 +95,44 @@ Example app listening on port 80
 So, this way of running the app only works for testing. In the next steps ```pm2``` (process manager 2) is used to run the app
 so it will keep running when the Terminal is closed.
 
-With the app running, put the url for the app, http://<domain-name>, in the browser and see if the app responds. For example,
-with my app at *techinnovator.online* I go to http://techinnovator.online and get "Hello World!" in the browser.
+With the app running, put the URL for the app, ```http://<domain-name>```, in the browser and see if the app responds. For example,
+with my app at *techinnovator.online* I go to ```http://techinnovator.online``` and get "Hello World!" in the browser. If your app
+is not on port 80, don't forget to put the port in the URL (example: http://techinnovator.online:3000)
+
+Use ctrl-c to exit the app.
+
+Next, install ```pm2``` (process manager 2) to run the app and keep it running when the Terminal is closed.
+
+```npm install pm2 -g```
+
+Note: the ```-g``` is needed. It is to specify install globally. But, since ```npm``` is installed in ```.nvm``` in the
+home directory (```~```), ```pm2``` is installed there as well. I found that if ```-g``` isn't included ```which pm2```` can't find it.
+
+When ```-g``` is used, the path, as an example, looks like the following after the installation.
+
+```
+~/.nvm/versions/node/v16.19.0/bin/pm2
+```
+
+Start the node/express app using pm2. The following command assumes the project folder, where *index.js* is located, is the current working directory.
+
+```pm2 start index.js```
+
+Example:
+
+```
+[ec2-user@ip-172-31-88-127 staticapp]$ pm2 start index.js
+[PM2] Applying action restartProcessId on app [index](ids: [ 0 ])
+[PM2] [index](0) ✓
+[PM2] Process successfully started
+┌─────┬──────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id  │ name     │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├─────┼──────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0   │ index    │ default     │ 1.0.0   │ fork    │ 7446     │ 0s     │ 15   │ online    │ 0%       │ 14.4mb   │ ec2-user │ disabled │
+└─────┴──────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+[ec2-user@ip-172-31-88-127 staticapp]$ 
+
+```
 
  
 
