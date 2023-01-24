@@ -97,7 +97,7 @@ so it will keep running when the Terminal is closed.
 
 With the app running, put the URL for the app, ```http://<domain-name>```, in the browser and see if the app responds. For example,
 with my app at *techinnovator.online* I go to ```http://techinnovator.online``` and get "Hello World!" in the browser. If your app
-is not on port 80, don't forget to put the port in the URL (example: http://techinnovator.online:3000)
+is not on port 80, don't forget to put the port in the URL (example: ```http://techinnovator.online:3000```)
 
 Use ctrl-c to exit the app.
 
