@@ -16,7 +16,7 @@ The following example assumes there is a project directory called *myapp* on the
 
 In the following process the project directory is zipped on the local workstation and copied to the server using ```scp```.  On the server, the zip file is unzipped to create the project directory there.
 
-On the local workstation, from the directory that is holding *myapp*, zip *myapp* to create *myapp.zip*:
+On the local workstation, from the directory that is holding *myapp* (the directory above *myapp*), zip *myapp* to create *myapp.zip*:
 
 ```zip -r myapp.zip myapp```
 
