@@ -14,6 +14,8 @@ To copy the node/express app (project directory) to the server you can use ```sc
 The following example assumes there is a project directory called *myapp* on the local workstation and it is to be placed in a directory called 
 *myapp* on the server. It also assumes the ```pem``` file is at ```"~/keys/AWS Node Server 1.pem"``` and the domain name of the server is ```techinnovator.online```.
 
+In the following process the project directory is zipped on the local workstation and copied to the server using ```scp```.  On the server, the zip file is unzipped to create the project directory there.
+
 On the local workstation, from the directory holding *myapp*, zip *myapp* to create *myapp.zip*:
 
 ```zip -r myapp.zip myapp```
