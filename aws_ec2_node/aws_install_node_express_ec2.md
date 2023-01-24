@@ -67,7 +67,7 @@ First, determine where node is installed. ```which node``` can be used to determ
 
 ```which node```
 
-The following is an example of a path that may be returned. Copy the path **you receive** for your node installation.
+The following is an example of a path that may be returned. Copy the path **you receive** for **your** node installation.
 
 ```~/.nvm/versions/node/v16.19.0/bin/node```
 
