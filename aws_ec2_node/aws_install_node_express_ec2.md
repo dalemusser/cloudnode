@@ -136,7 +136,7 @@ Example:
 
 After pm2 starts the node/express app the command prompt returns. The Terminal may now be closed and the app will continue to run.
 
-Test that the node/express server is running and works by going to its URL. Remember to put http:// before the domain name if the app is running on port 80.
+Test that the node/express server is running and works by going to its URL. Remember to put ```http://``` before the domain name if the app is running on port 80.
  
 
 
