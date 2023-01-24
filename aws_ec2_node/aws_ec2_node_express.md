@@ -7,6 +7,8 @@ The following documents were the primary sources used to determine the process.
 * [Tutorial: Setting Up Node.js on an Amazon EC2 Instance](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html) (AWS)
 * [How to Deploy a Node.js Application On AWS EC2 Server](https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server) (ourcodeworld.com)
 
+Note: primary sources are provided in the documentation. You don't need to view the primary sources to follow the processes presented. They are included as additional information that can be accessed if needed and to document the sources used.
+
 ---
 
 ## Needed Before Launching (Creating) EC2 Instance
