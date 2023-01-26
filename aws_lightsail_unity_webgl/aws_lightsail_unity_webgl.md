@@ -21,4 +21,10 @@ Create a static IP address and attach to the instance.
 
 If a static IP address already exists, attach it to the instance.
 
+## Assign Instance to Load Balancer
+
+Set the target instance of the load balancer to the Unity-webGL-Hosting1 instance.
+
+
+
 
