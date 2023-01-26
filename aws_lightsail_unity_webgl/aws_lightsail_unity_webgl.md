@@ -76,7 +76,7 @@ Restart apache so it will use the change to the conf.
 
 Create an ```.htaccess``` file in ```/opt/bitnami/apache2/htdocs``` that contains the following.
 
-The following is from [Server configuration code samples](https://docs.unity3d.com/2023.1/Documentation/Manual/webgl-server-configuration-code-samples.html). I used this as provided except the ```application/wasm``` line was changed to ```AddType application/wasm .wasm .wasm.gz```. 
+The following is from [Server configuration code samples (Unity)](https://docs.unity3d.com/2023.1/Documentation/Manual/webgl-server-configuration-code-samples.html). I used this as provided except the ```application/wasm``` line was changed to ```AddType application/wasm .wasm .wasm.gz```. 
 
 ```
 <IfModule mod_mime.c>
